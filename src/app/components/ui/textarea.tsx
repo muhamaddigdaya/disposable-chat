@@ -8,9 +8,9 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
   ({ className, ...props }, ref) => {
     return (
       <textarea
-      aria-multiline="true"
+        aria-multiline="true"
         className={cn(
-          "flex stretch h-10 max-h-[40vh] w-full rounded-md border border-input bg-transparent px-3 py-2 text-md overflowring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+          "m-0 w-full h-10 resize-none border-0 bg-transparent p-0 pr-10 focus:ring-0 focus-visible:ring-0 dark:bg-transparent md:pr-12 pl-3 md:pl-0",
           className
         )}
         ref={ref}
