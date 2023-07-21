@@ -1,4 +1,5 @@
 'use client';
+import TextareaAutosize from 'react-textarea-autosize';
 import { Textarea } from "@/app/components/ui/textarea";
 import Head from "next/head";
 
@@ -12,7 +13,7 @@ export default function Home() {
         <input aria-multiline="true" className="w-full h-full"readOnly type="text" id="output"/>
       </div>
       <form>
-        <Textarea
+        <TextareaAutosize
           className="m-0 w-full resize-none border-0 bg-transparent p-0 pr-10 focus:ring-0 focus-visible:ring-0 dark:bg-transparent md:pr-12 pl-3 md:pl-0"
           placeholder="Type your message here..."
         />
