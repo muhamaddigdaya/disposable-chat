@@ -1,5 +1,4 @@
 'use client';
-import Head from "next/head";
 import React from 'react'
 import Chats from "./components/ui/Chats";
 import Leftbar from "./components/ui/Leftbar";
