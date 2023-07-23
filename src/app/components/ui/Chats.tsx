@@ -5,8 +5,9 @@ type Props = {}
 
 const Chats = (props: Props) => {
   return (
-    <div className=' h-full max-h-screen'>
-        <Chatinput />
+    <div className='h-full w-full max-h-screen pb-20'>
+      <div className='h-full'></div>
+      <Chatinput />
     </div>
     
   )
