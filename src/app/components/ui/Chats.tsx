@@ -5,7 +5,7 @@ type Props = {}
 
 const Chats = (props: Props) => {
   return (
-    <div className='h-full w-full max-h-screen pb-20'>
+    <div className='h-full w-full h-max-full  flex flex-col'>
       <div className='h-full'></div>
       <Chatinput />
     </div>

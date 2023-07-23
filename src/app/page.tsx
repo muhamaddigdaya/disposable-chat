@@ -7,7 +7,7 @@ import Rightbar from "./components/ui/Rightbar";
 
 export default function Home() {
   return (
-    <main className="flex flex-row h-screen w-full items-center justify-between gap-x-8">
+    <main className="flex flex-row h-screen w-full items-center justify-between">
       <Leftbar />
       <Chats />
       <Rightbar />
