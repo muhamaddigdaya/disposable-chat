@@ -12,26 +12,6 @@ const Chats = (props: Props) => {
       <ScrollArea className='h-full text-slate-100 px-8'>
         <Conversation />
         <Separator />
-        <Conversation />
-        <Separator />
-        <Conversation />
-        <Separator />
-        <Conversation />
-        <Separator />
-        <Conversation />
-        <Separator />
-        <Conversation />
-        <Separator />
-        <Conversation />
-        <Separator />
-        <Conversation />
-        <Separator />
-        <Conversation />
-        <Separator />
-        <Conversation />
-        <Separator />
-        <Conversation />
-        <Separator />
       </ScrollArea>
       <Chatinput />
     </div>

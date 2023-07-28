@@ -31,11 +31,9 @@ const Conversation = (props: Props) => {
         Show picture
       </HoverCardContent>
     </HoverCard>
-      <div className='flex flex-col'>
+      <div className='flex flex-col' id='conversation'>
         <h2 className='font-semibold'>bakihanma</h2>
-        <p className='font-light'>hello world🤫</p>
-        <p className='font-light'>nextjs hits hard fr</p>
-        <p className='font-light'>tough build rh</p>
+        <p id='dynamic-paragraph'></p>
       </div>
     </div>
   )
