@@ -16,6 +16,8 @@ function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
   const inputText = (document.getElementById('inputText') as HTMLTextAreaElement).value;
   const dynamicParagraph = document.getElementById('dynamic-paragraph');
   if (dynamicParagraph) {
+    const parent = document.getElementById('conversation');
+    parent?.appendChild(dynamicParagraph)
     dynamicParagraph.textContent = inputText;
   }
 }
