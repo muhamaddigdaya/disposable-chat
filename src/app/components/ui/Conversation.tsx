@@ -31,7 +31,7 @@ const Conversation = (props: Props) => {
         Show picture
       </HoverCardContent>
     </HoverCard>
-      <div className='flex flex-col' id='conversation' aria-multiline='true'>
+      <div className='flex flex-col whitespace-break-spaces' id='conversation' aria-multiline='true'>
         <h2 className='font-semibold'>bakihanma</h2>
         <p id='dynamic-paragraph' className='w-1/2'></p>
       </div>
