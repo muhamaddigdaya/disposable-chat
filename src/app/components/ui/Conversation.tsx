@@ -20,7 +20,7 @@ const Conversation = (props: Props) => {
       <Dialog>
         <DialogTrigger>
           <HoverCardTrigger className='cursor-pointer'>
-            <Image src="/baki.jpg" width={42} height={42} alt='pp' className='rounded-full' />
+            <Image src="/baki.jpg" width={42} height={42} alt='pp' className='rounded-full' layout='fixed'/>
           </HoverCardTrigger>
         </DialogTrigger>
         <DialogContent className=' w-fit'>
@@ -31,9 +31,9 @@ const Conversation = (props: Props) => {
         Show picture
       </HoverCardContent>
     </HoverCard>
-      <div className='flex flex-col' id='conversation'>
+      <div className='flex flex-col' id='conversation' aria-multiline='true'>
         <h2 className='font-semibold'>bakihanma</h2>
-        <p id='dynamic-paragraph'></p>
+        <p id='dynamic-paragraph' className='w-1/2'></p>
       </div>
     </div>
   )

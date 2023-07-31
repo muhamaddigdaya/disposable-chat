@@ -13,12 +13,23 @@ type Props = {}
 
 function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
   event.preventDefault();
-  const inputText = (document.getElementById('inputText') as HTMLTextAreaElement).value;
-  const dynamicParagraph = document.getElementById('dynamic-paragraph');
-  if (dynamicParagraph) {
-    const parent = document.getElementById('conversation');
-    parent?.appendChild(dynamicParagraph)
-    dynamicParagraph.textContent = inputText;
+
+  // Get the input text
+  const inputText = (document.getElementById('inputText') as HTMLTextAreaElement).value.trim();
+
+  if (inputText !== '') {
+    // Create a new paragraph element
+    const newP = document.createElement('p');
+    newP.textContent = inputText;
+
+    // Append the new paragraph to the conversation div
+    const conversation = document.getElementById('conversation');
+    if (conversation) {
+      conversation.appendChild(newP);
+    }
+
+    // Clear the input text area
+    (document.getElementById('inputText') as HTMLTextAreaElement).value = '';
   }
 }
 
@@ -32,7 +43,7 @@ const Chatinput = (props: Props) => {
           id='inputText'
         />
         <HoverCard openDelay={300} closeDelay={0}>
-          <HoverCardTrigger>
+          <HoverCardTrigger className='self-end'>
             <Button size="icon" id="submit" type="submit" variant="appear" className='self-end bottom-0 text-gray-400 hover:bg-inherit hover:text-gray-100' >
               <SendHorizonal className="h-4 w-4 "/>
             </Button>
