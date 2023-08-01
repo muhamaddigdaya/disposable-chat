@@ -8,6 +8,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/app/components/ui/hover-card"
+import { CopyBlock } from "react-code-blocks";
 
 type Props = {}
 

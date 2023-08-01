@@ -10,6 +10,7 @@ import {
   DialogContent,
   DialogTrigger,
 } from "@/app/components/ui/dialog"
+import { CopyBlock } from "react-code-blocks";
 
 type Props = {}
 
@@ -33,7 +34,6 @@ const Conversation = (props: Props) => {
     </HoverCard>
       <div className='flex flex-col whitespace-break-spaces' id='conversation' aria-multiline='true'>
         <h2 className='font-semibold'>bakihanma</h2>
-        <p id='dynamic-paragraph' className='w-1/2'></p>
       </div>
     </div>
   )
