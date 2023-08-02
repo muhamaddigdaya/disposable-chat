@@ -16,7 +16,7 @@ type Props = {}
 
 const Conversation = (props: Props) => {
   return (
-    <div className='flex flex-row gap-x-2 items-start my-5'>
+    <div className='flex flex-row gap-x-2 items-start my-5' id='conversation-wrapper'>
     <HoverCard openDelay={300} closeDelay={0}>
       <Dialog>
         <DialogTrigger>
