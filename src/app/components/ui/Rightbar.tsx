@@ -19,9 +19,9 @@ const Rightbar = (props: Props) => {
         <DialogTrigger>
           <Button className='p-2 hover:bg-gray-600 hover:text-slate-50 rounded-md cursor-pointer' id='clear'>Clear chat</Button>
         </DialogTrigger>
-        <DialogContent className='flex flex-col bg-gray-400 p-4'>
-          Are you sure?
-          <div>
+        <DialogContent className='flex flex-col bg-gray-200 p-4 text-center rounded-lg'>
+          <p className='mb-4'>Are you sure?</p>
+          <div className='space-x-2'>
             <Button onClick={Reload}>Clear</Button>
             <Button className='bg-invisible border-black border-2 hover:bg-gray-500/20 text-black'>Cancel</Button>
           </div>
