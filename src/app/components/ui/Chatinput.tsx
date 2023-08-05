@@ -2,7 +2,7 @@
 import TextareaAutosize from 'react-textarea-autosize';
 import React from 'react'
 import { Button } from "@/app/components/ui/button"
-import { SendHorizonal } from 'lucide-react';
+import { SendHorizonal, Image} from 'lucide-react';
 import {
   HoverCard,
   HoverCardContent,
@@ -43,6 +43,16 @@ const Chatinput = (props: Props) => {
           placeholder="Type your message here..."
           id='inputText'
         />
+        <HoverCard openDelay={300} closeDelay={0}>
+          <HoverCardTrigger className='self-end'>
+            <Button size="icon" id="submit" type="submit" variant="appear" className='self-end bottom-0 text-gray-400 hover:bg-inherit hover:text-gray-100' >
+              <Image className="h-4 w-4 "/>
+            </Button>
+            </HoverCardTrigger>
+          <HoverCardContent className='hover:cursor-default'>
+            Upload image
+          </HoverCardContent>
+        </HoverCard>
         <HoverCard openDelay={300} closeDelay={0}>
           <HoverCardTrigger className='self-end'>
             <Button size="icon" id="submit" type="submit" variant="appear" className='self-end bottom-0 text-gray-400 hover:bg-inherit hover:text-gray-100' >

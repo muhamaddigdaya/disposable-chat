@@ -25,7 +25,7 @@ const Info = (props: Props) => {
           </HoverCardTrigger>
         </DialogTrigger>
         <DialogContent className=' w-fit'>
-          <Image src="/avatar.png" width={240} height={240} alt='pp' className='rounded-full' />
+          <Image src="/avatar.png" width={240} height={240} alt='pp' className='rounded-full border' />
         </DialogContent>
       </Dialog>
       <HoverCardContent className='cursor-default'>
