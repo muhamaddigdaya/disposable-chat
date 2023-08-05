@@ -7,7 +7,7 @@ import Info from './Info'
 
 type Props = {}
 
-const Chats = (props: Props) => {
+const Chatbox = (props: Props) => {
   return (
     <div className='h-full w-full h-max-full bg-gray-700 flex flex-col'>
       <ScrollArea className='h-full text-slate-100 px-8'>
@@ -22,4 +22,4 @@ const Chats = (props: Props) => {
   )
 }
 
-export default Chats
+export default Chatbox
