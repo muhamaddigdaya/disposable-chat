@@ -16,7 +16,7 @@ type Props = {}
 
 const Info = (props: Props) => {
   return (
-    <div className='flex flex-row gap-x-2 items-start my-5' id='conversation-wrapper'>
+    <div className='flex flex-row gap-x-2 items-start my-5' id='information-wrapper'>
     <HoverCard openDelay={300} closeDelay={0}>
       <Dialog>
         <DialogTrigger>
@@ -32,7 +32,7 @@ const Info = (props: Props) => {
         Show picture
       </HoverCardContent>
     </HoverCard>
-      <div className='flex flex-col whitespace-break-spaces' id='conversation' aria-multiline='true'>
+      <div className='flex flex-col whitespace-break-spaces' id='information' aria-multiline='true'>
         <h2 className='font-semibold'>Information</h2>
         <p></p>
       </div>
