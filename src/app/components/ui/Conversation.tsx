@@ -33,7 +33,7 @@ const Conversation = (props: Props) => {
       </HoverCardContent>
     </HoverCard>
       <div className='flex flex-col whitespace-break-spaces' id='conversation' aria-multiline='true'>
-        <h2 className='font-semibold'>bakihanma</h2>
+        <h2 className='font-semibold'>You</h2>
       </div>
     </div>
   )

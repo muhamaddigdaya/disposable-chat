@@ -34,7 +34,9 @@ const Info = (props: Props) => {
     </HoverCard>
       <div className='flex flex-col whitespace-break-spaces' id='information' aria-multiline='true'>
         <h2 className='font-semibold'>Information</h2>
-        <p></p>
+        <p>
+        ❗❗This conversation will reset with refresh page/clear chat button❗❗
+        </p>
       </div>
     </div>
   )
