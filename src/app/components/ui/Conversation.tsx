@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import Image from 'next/image'
 import {
   HoverCard,
@@ -21,11 +21,11 @@ const Conversation = (props: Props) => {
       <Dialog>
         <DialogTrigger>
           <HoverCardTrigger className='cursor-pointer'>
-            <Image src="/baki.jpg" width={42} height={42} alt='pp' className='rounded-full' layout='fixed'/>
+            <Image src="/baki.jpg" width={42} height={42} alt='pp' className='rounded-full'/>
           </HoverCardTrigger>
         </DialogTrigger>
         <DialogContent className=' w-fit'>
-          <Image src="/baki.jpg" width={240} height={240} alt='pp' className='rounded-full' />
+          <Suspense fallback="loading image..."><Image src="/baki.jpg" width={240} height={240} alt='pp' className='rounded-full' /></Suspense>
         </DialogContent>
       </Dialog>
       <HoverCardContent className='cursor-default'>
