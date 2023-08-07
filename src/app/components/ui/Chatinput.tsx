@@ -8,7 +8,13 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/app/components/ui/hover-card"
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "@/app/components/ui/dialog"
 import { CopyBlock } from "react-code-blocks";
+import { Input } from './input';
 
 type Props = {}
 
@@ -39,7 +45,7 @@ const Chatinput = (props: Props) => {
     <div className='stretch flex bg-gray-700 p-8 pt-0 items-centerrelative bottom-0 w-full '>
       <form className='stretch  bg-gray-600 flex px-4 py-2 items-center rounded-lg relative bottom-0 w-full' id='chat-form' onSubmit={handleSubmit}>
         <TextareaAutosize
-          className="placeholder:text-gray-400 text:xs text-gray-50 m-0 min-h-10 max-h-[44vh] w-full resize-none border-0 bg-transparent mr-2 p-0 dark:bg-transparent pl-"
+          className="placeholder:text-gray-400 text:xs text-gray-50 m-0 min-h-10 max-h-[44vh] w-full resize-none border-0 bg-transparent mr-2 p-0 dark:bg-transparent outline-0"
           placeholder="Type your message here..."
           id='inputText'
         />
