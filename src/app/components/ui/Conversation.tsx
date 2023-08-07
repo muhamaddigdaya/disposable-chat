@@ -12,7 +12,7 @@ import {
 } from "@/app/components/ui/dialog"
 import { CopyBlock } from "react-code-blocks";
 
-type Props = {}
+type Props = {username?: string}
 
 const Conversation = (props: Props) => {
   return (
@@ -33,10 +33,12 @@ const Conversation = (props: Props) => {
       </HoverCardContent>
     </HoverCard>
       <div className='flex flex-col whitespace-break-spaces' id='conversation' aria-multiline='true'>
-        <h2 className='font-semibold'>You</h2>
+        <h2 className='font-semibold'>{props.username}</h2>
       </div>
     </div>
   )
 }
+
+Conversation.defaultProps = {username: 'You'}
 
 export default Conversation
