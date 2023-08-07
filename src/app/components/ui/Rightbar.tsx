@@ -24,7 +24,7 @@ const Rightbar = (props: Props) => {
     <div className='h-full w-1/6 bg-gray-800 text-slate-100 p-4 content-center'>
       <AlertDialog>
         <AlertDialogTrigger>
-          <Button className='p-2 hover:bg-gray-600 hover:text-slate-50 rounded-md cursor-pointer' id='clear'>Clear chat</Button>
+          <Button variant={'destructive'} id='clear'>Clear chat</Button>
         </AlertDialogTrigger>
         <AlertDialogContent className='flex flex-col items-center p-4 sm:text-center rounded-lg'>
           <AlertDialogHeader>
@@ -35,7 +35,7 @@ const Rightbar = (props: Props) => {
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction onClick={Reload}>Delete</AlertDialogAction>
+            <AlertDialogAction onClick={Reload} className='bg-destructive text-destructive-foreground hover:bg-destructive/90'>Delete</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
