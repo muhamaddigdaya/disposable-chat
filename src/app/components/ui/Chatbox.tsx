@@ -9,8 +9,8 @@ type Props = {}
 
 const Chatbox = (props: Props) => {
   return (
-    <div className='h-full w-full h-max-full bg-gray-700 flex flex-col'>
-      <ScrollArea className='h-full text-slate-100 px-8'>
+    <div className='h-full w-full h-max-full bg-popover flex flex-col'>
+      <ScrollArea className='h-full text-foreground px-8'>
         <Info />
         <Separator />
         <Conversation />
@@ -18,7 +18,7 @@ const Chatbox = (props: Props) => {
       </ScrollArea>
       <Chatinput />
     </div>
-    
+
   )
 }
 

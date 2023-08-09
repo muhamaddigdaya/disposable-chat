@@ -21,7 +21,7 @@ function Reload() {
 
 const Rightbar = (props: Props) => {
   return (
-    <div className='h-full w-1/6 bg-gray-800 text-slate-100 p-4 content-center'>
+    <div className='h-full w-1/6 bg-secondary text-secondary-foreground p-4 content-center'>
       <AlertDialog>
         <AlertDialogTrigger>
           <Button variant={'destructive'} id='clear'>Clear chat</Button>
@@ -39,7 +39,7 @@ const Rightbar = (props: Props) => {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-        
+
     </div>
   )
 }
