@@ -5,12 +5,12 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/app/components/ui/tooltip"
+} from "@/components/ui/tooltip"
 import {
   Dialog,
   DialogContent,
   DialogTrigger,
-} from "@/app/components/ui/dialog"
+} from "@/components/ui/dialog"
 import { CopyBlock } from "react-code-blocks";
 
 type Props = { username?: string }
