@@ -1,8 +1,8 @@
 import React from 'react'
 import Chatinput from './Chatinput'
-import { ScrollArea } from "@/app/components/ui/scroll-area"
+import { ScrollArea } from "./scroll-area"
 import Conversation from './Conversation'
-import { Separator } from "@/app/components/ui/separator"
+import { Separator } from "./separator"
 import Info from './Info'
 
 type Props = {}
