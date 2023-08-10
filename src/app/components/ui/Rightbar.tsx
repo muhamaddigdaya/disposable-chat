@@ -11,7 +11,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "./alert-dialog"
-
+import { ModeToggle } from './theme-button'
 
 type Props = {}
 
@@ -39,7 +39,7 @@ const Rightbar = (props: Props) => {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-
+      <ModeToggle />
     </div>
   )
 }
