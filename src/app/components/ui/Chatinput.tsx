@@ -1,19 +1,19 @@
 'use client';
 import TextareaAutosize from 'react-textarea-autosize';
 import React from 'react'
-import { Button } from "@/components/ui/button"
+import { Button } from "@/app/components/ui/button"
 import { SendHorizonal, Image } from 'lucide-react';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip"
+} from "@/app/components/ui/tooltip"
 import {
   Dialog,
   DialogContent,
   DialogTrigger,
-} from "@/components/ui/dialog"
+} from "@/app/components/ui/dialog"
 import { CopyBlock } from "react-code-blocks";
 import { Input } from './input';
 
