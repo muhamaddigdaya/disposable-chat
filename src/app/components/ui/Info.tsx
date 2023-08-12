@@ -17,7 +17,7 @@ type Props = {}
 
 const Info = (props: Props) => {
   return (
-    <div className='flex flex-row gap-x-2 items-start my-5' id='information-wrapper'>
+    <div className='flex flex-row gap-x-2 items-start my-5 px-8' id='information-wrapper'>
       <TooltipProvider>
         <Tooltip>
           <Dialog>

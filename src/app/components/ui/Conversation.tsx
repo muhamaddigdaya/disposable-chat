@@ -17,7 +17,7 @@ type Props = { username?: string }
 
 const Conversation = (props: Props) => {
   return (
-    <div className='flex flex-row gap-x-2 items-start my-5' id='conversation-wrapper'>
+    <div className='flex flex-row gap-x-2 items-start my-5 px-8' id='conversation-wrapper'>
       <TooltipProvider>
         <Tooltip>
           <Dialog>
