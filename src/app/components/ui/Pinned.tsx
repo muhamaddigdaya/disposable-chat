@@ -4,7 +4,7 @@ type Props = {}
 
 const Pinned = (props: Props) => {
     return (
-        <div className=' w-full bg-primary'>nav-chat</div>
+        <div className=' w-full bg-primary text-primary-foreground'>nav-chat</div>
     )
 }
 
