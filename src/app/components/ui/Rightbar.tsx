@@ -12,6 +12,7 @@ import {
   AlertDialogTrigger,
 } from "./alert-dialog"
 import { ModeToggle } from './theme-button'
+import { UsernameInput } from './username-provider'
 
 type Props = {}
 
@@ -40,6 +41,7 @@ const Rightbar = (props: Props) => {
         </AlertDialogContent>
       </AlertDialog>
       <ModeToggle />
+      <UsernameInput />
     </div>
   )
 }
