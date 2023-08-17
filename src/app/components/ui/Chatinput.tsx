@@ -9,13 +9,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "./tooltip"
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-} from "./dialog"
-import { CopyBlock } from "react-code-blocks";
-import { Input } from './input';
 
 type Props = {}
 

@@ -11,7 +11,6 @@ import {
   DialogContent,
   DialogTrigger,
 } from "./dialog"
-import { CopyBlock } from "react-code-blocks";
 
 type Props = {}
 

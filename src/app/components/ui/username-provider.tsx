@@ -1,6 +1,5 @@
 'use client'
 import React, { createContext, useState } from 'react'
-import { Input } from './input';
 
 
 export const UsernameContext = createContext('You')

@@ -11,7 +11,6 @@ import {
   DialogContent,
   DialogTrigger,
 } from "./dialog";
-import { CopyBlock } from "react-code-blocks";
 import { UsernameContext } from '@/components/ui/username-provider';
 
 type Props = {};
