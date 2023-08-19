@@ -22,7 +22,7 @@ const Info = (props: Props) => {
           <Dialog>
             <DialogTrigger>
               <TooltipTrigger className='cursor-pointer'>
-                <Image src="/avatar.png" width={42} height={42} alt='pp' className='rounded-full border border-gray-500' layout='fixed' />
+                <Image src="/avatar.png" width={42} height={42} alt='pp' className='rounded-full border border-gray-500' />
               </TooltipTrigger>
             </DialogTrigger>
             <DialogContent className=' w-fit'>
