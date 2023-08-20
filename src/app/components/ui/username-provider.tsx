@@ -13,7 +13,7 @@ export function UsernameInput() {
 
     return (
         <UsernameContext.Provider value={usernameValue}>
-            <form onSubmit={(event) => event.preventDefault()} id='usernameForm'>
+            <form onSubmit={(event) => event.preventDefault()} id='usernameForm' className='bg-card p-2'>
                 <input
                     type="text"
                     value={usernameValue}

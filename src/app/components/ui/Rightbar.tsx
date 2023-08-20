@@ -22,9 +22,9 @@ function Reload() {
 
 const Rightbar = (props: Props) => {
   return (
-    <div className='h-full w-1/6 bg-secondary text-secondary-foreground p-4 content-center'>
+    <div className='flex flex-col h-full w-1/6 bg-secondary text-secondary-foreground p-4 content-center'>
       <AlertDialog>
-        <AlertDialogTrigger>
+        <AlertDialogTrigger className='w-full'>
           <Button variant={'destructive'} id='clear'>Clear chat</Button>
         </AlertDialogTrigger>
         <AlertDialogContent className='flex flex-col items-center p-4 sm:text-center rounded-lg'>
