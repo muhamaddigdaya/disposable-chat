@@ -2,13 +2,19 @@
 import TextareaAutosize from 'react-textarea-autosize';
 import React from 'react'
 import { Button } from "./button"
-import { SendHorizonal, Image } from 'lucide-react';
+import { SendHorizonal, Smile } from 'lucide-react';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "./tooltip"
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
+import EmojiPicker from 'emoji-picker-react';
 
 type Props = {}
 
@@ -45,14 +51,21 @@ const Chatinput = (props: Props) => {
         />
         <TooltipProvider>
           <Tooltip>
-            <TooltipTrigger className='self-end'>
-              <Button size="icon" id="submit" type="submit" variant="appear" className='self-end bottom-0 hover:bg-inherit hover:text-primary' >
-                <Image className="h-4 w-4 " />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent className='hover:cursor-default'>
-              Upload image
-            </TooltipContent>
+            <Popover>
+              <TooltipTrigger className='self-end'>
+                <PopoverTrigger>
+                  <Button size="icon" id="submit" type="submit" variant="appear" className='self-end bottom-0 hover:bg-inherit hover:text-primary' >
+                    <Smile className="h-4 w-4 " />
+                  </Button>
+                </PopoverTrigger>
+              </TooltipTrigger>
+              <TooltipContent className='hover:cursor-default'>
+                Emoticon
+              </TooltipContent>
+              <PopoverContent>
+                <EmojiPicker />
+              </PopoverContent>
+            </Popover>
           </Tooltip>
           <Tooltip>
             <TooltipTrigger className='self-end'>
