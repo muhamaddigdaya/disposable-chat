@@ -14,7 +14,6 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import EmojiPicker from 'emoji-picker-react';
 
 type Props = {}
 
@@ -63,7 +62,6 @@ const Chatinput = (props: Props) => {
                 Emoticon
               </TooltipContent>
               <PopoverContent>
-                <EmojiPicker />
               </PopoverContent>
             </Popover>
           </Tooltip>
