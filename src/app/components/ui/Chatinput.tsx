@@ -45,7 +45,7 @@ const Chatinput = (props: Props) => {
       <form className='stretch bg-input text-muted-foreground flex px-4 py-2 items-center rounded-lg relative bottom-0 w-full' id='chat-form' onSubmit={handleSubmit}>
         <TextareaAutosize
           className="scrollbar-thin scrollbar-rounded-full scrollbar-thumb-primary scrollbar-track-none placeholder:text-muted-foreground text:xs text-foreground m-0 min-h-10 max-h-[44vh] w-full resize-none border-0 bg-transparent mr-2 p-0 dark:bg-transparent outline-0"
-          placeholder="Type your message here..."
+          placeholder="Message..."
           id='inputText'
         />
         <TooltipProvider>
