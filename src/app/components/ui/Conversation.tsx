@@ -12,21 +12,10 @@ import {
   DialogTrigger,
 } from "./dialog";
 import { UsernameContext } from '@/components/ui/username-provider';
-import Welcome from './Welcome';
-
 type Props = {};
 
 const Conversation = (props: Props) => {
   const usernameValue = useContext(UsernameContext);
-  const conversationDiv = document.querySelector('#conversation');
-  const pElement = conversationDiv?.querySelector('p');
-
-  if (pElement) {
-    pElement.style.display = 'block'; // Show the p element
-  } else {
-    return <Welcome />;
-  }
-
   return (
     <div className='flex flex-row gap-x-2 items-start my-5 px-8' id='conversation-wrapper'>
       <TooltipProvider>
