@@ -11,7 +11,6 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "./alert-dialog"
-import { UsernameInput } from './username-provider'
 
 type Props = {}
 
@@ -39,7 +38,6 @@ const Rightbar = (props: Props) => {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-      <UsernameInput />
     </div>
   )
 }
